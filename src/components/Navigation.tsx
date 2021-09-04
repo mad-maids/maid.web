@@ -21,7 +21,7 @@ interface NavigationProps {
 
 const NavMenu: FunctionComponent<NavigationProps> = ({ onCursor, isOpen }) => {
   const links = [
-    { key: "", href: "/work", label: "Work" },
+    // { key: "", href: "/work", label: "Work" },
     { key: "", href: "/blog", label: "Blog" },
     { key: "", href: "/archive", label: "Archive" },
   ];

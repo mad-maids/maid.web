@@ -73,7 +73,7 @@ const SocialLink = styled.div`
     }
   }
 
-  .Behance {
+  .Telegram {
     transition: 150ms all ease-in;
     &:hover {
       transition: 150ms all ease-in;

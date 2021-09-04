@@ -37,7 +37,7 @@ const Footer: FunctionComponent = () => {
     >
       <Social onCursor={onCursor} />
       <FooterCopyright>
-        <p> Copyright © {new Date().getFullYear()} Mad Maids</p>
+        <p> Copyright © 2020-{new Date().getFullYear()} Mad Maids</p>
         <a
           href="https://github.com/mad-maids"
           target="_blank"

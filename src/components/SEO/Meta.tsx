@@ -15,8 +15,8 @@ const SEOMeta: FunctionComponent<SEOMetaProps> = ({
   data,
 }) => {
   const metaDescription = description || data.description;
-
-  const metaTitle = title || data.title;
+  const subMetaTitle = " || Mad Maids";
+  const metaTitle = title + subMetaTitle || data.title + subMetaTitle;
 
   return (
     <Head>

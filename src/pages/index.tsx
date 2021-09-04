@@ -83,7 +83,7 @@ const Home: FunctionComponent<HomeProps> = ({ allWorks }) => {
       <HomepageAbout />
       <CVAccordion />
       <TextReel text="madmaids" x={x} />
-      <HomepageSlider data={limitedWorks} onCursor={onCursor} />
+      {/*<HomepageSlider data={limitedWorks} onCursor={onCursor} />*/}
 
       <CTA copyText={copyText} headingText={headingText} body={element} />
       <MainFooter />
