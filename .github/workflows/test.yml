@@ -1,0 +1,28 @@
+name: Test CI
+
+on: [push, pull_request]
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        env:
+          HOST: heroku
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          DB_HOST: ${{ secrets.DB_URL }}
+        with:
+          node-version: 14
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: web-${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            web-${{ runner.os }}-yarn-
+      - run: yarn --frozen-lockfile
+      - run: yarn format:check
+      - run: yarn lint

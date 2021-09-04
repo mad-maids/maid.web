@@ -1,10 +1,8 @@
 <p align="center"><a href="https://t.me/westmaid_bot" target="_blank"><img height="300" width="300" src="./assets/logo.jpg"/></a></p>
 
-<h2 align="center">West Maid (TSLint)</h2>
+<h2 align="center">Mad Maids Web</h2>
 
-<p align="center"><a href="https://t.me/westmaid_bot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=000000&colorB=ffffff"/></a></p>
-
-<p align="center"> Elegant Network Manager for <a href="https://t.me/s/SeventyPlusBIS" target="_blank">WIUT +70 BIS</a> Groups.</p>
+<p align="center"><a href="https://maid.uz"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=vercel&message=deployed&logoColor=eceff4&logo=github&colorA=000000&colorB=ffffff"/></a></p>
 
 **This bot was built with [telegraf.js](https://github.com/telegraf/telegraf) in
 [Node.js](https://nodejs.org/en/). This bot works as package modular, so don't
