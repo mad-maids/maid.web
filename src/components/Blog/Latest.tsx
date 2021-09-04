@@ -27,7 +27,7 @@ const Latest: FunctionComponent<LatestProps> = ({ latestPosts }) => {
 
   useEffect(() => {
     if (inView) {
-      animation.start("visible");
+      animation.start("visible").then();
     }
   }, [inView, animation]);
 

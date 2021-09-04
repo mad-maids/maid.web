@@ -50,16 +50,13 @@ const LatestEntries: FunctionComponent<LatestEntriesProps> = ({
     }
   }, [inView, animation]);
 
-  // const { data } = useSWR(`/api/page-views?id=${slug}`, fetcher);
-  const views = 200;
-
   return (
     <Entry ref={ref}>
       <EntryInfoContainer>
         <Line animate={animation} initial="hidden" variants={line} />
         <EntryNumber animate={animation} initial="hidden" variants={number}>
           <p>{format(parseISO(date), "MMM dd, yyyy")}</p>
-          <p>{views ? views : "–––"} views</p>
+          <p>Maid Poster</p>
         </EntryNumber>
         <EntryTitle animate={animation} initial="hidden" variants={heading}>
           <h3>{title}</h3>

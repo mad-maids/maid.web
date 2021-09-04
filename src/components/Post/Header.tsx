@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import { media } from "../../styles/styles-utils";
 
-import ViewCounter from "../ViewCounter";
 
 interface PostHeadProps {
   image: string;
@@ -42,7 +41,6 @@ const PostHead: FunctionComponent<PostHeadProps> = ({
             <FontAwesomeIcon icon={faBook} style={theStyle} />
             {readtime}
           </PostReadTime>
-          <ViewCounter id={slug} />
         </PostDataWrapper>
       </PostHeadWrapper>
       <PostHero>
