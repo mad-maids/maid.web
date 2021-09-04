@@ -3,7 +3,7 @@ import React from "react";
 
 import { frontMatter as blogPosts } from "../pages/posts/**/*.mdx";
 
-const siteUrl = `https://bornwhitfield-git-develop.darkristy.vercel.app`;
+const siteUrl = `https://maid.uz`;
 const pathPrefix = `/posts/`;
 
 const blogPostsRssXml = (filteredPosts) => {
@@ -34,7 +34,7 @@ const getRssXml = (filteredPosts) => {
 	return `<?xml version="1.0" ?>
     <rss version="2.0">
       <channel>
-          <title>Blog by Kahlil Whitifield</title>
+          <title>Blog by Mad Maids</title>
           <link>https://www.bergqvist.it</link>
           
           <language>en</language>

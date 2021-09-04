@@ -38,8 +38,8 @@ const BlogFooter: FunctionComponent = () => {
 			<FooterRow>
 				<Social onCursor={onCursor} />
 				<FooterCopyright>
-					<p>© {new Date().getFullYear()} Kahlil Whitfield</p>
-					<a href="https://github.com/darkristy/bornwhitfield" target="_blank" rel="noopener noreferrer">
+					<p>© {new Date().getFullYear()} Mad Maids</p>
+					<a href="https://github.com/mad-maids" target="_blank" rel="noopener noreferrer">
 						<p
 							style={{ textTransform: "initial" }}
 							onMouseEnter={(): void => onCursor("pointer")}
