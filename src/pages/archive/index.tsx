@@ -8,31 +8,33 @@ import { Posts } from "../../models";
 import useCursor from "../../hooks/useCursor";
 
 interface Props {
-	posts: Posts[];
+  posts: Posts[];
 }
 
 const Index: FunctionComponent<Props> = ({ posts }) => {
-	const { onCursor } = useCursor();
+  const { onCursor } = useCursor();
 
-	return (
-		<motion.div exit={{ opacity: 0 }}>
-			<SEO title="Archive" description="Just a list of all blog posts." />
-			<BlogArchiveList data={posts} onCursor={onCursor} />
-		</motion.div>
-	);
+  return (
+    <motion.div exit={{ opacity: 0 }}>
+      <SEO title="Archive" description="Just a list of all blog posts." />
+      <BlogArchiveList data={posts} onCursor={onCursor} />
+    </motion.div>
+  );
 };
 
 export default Index;
 
-export async function getStaticProps(): Promise<{ props: { posts: FrontMatter[] } }> {
-	const allPosts = getAllPosts();
-	const filteredPosts = allPosts
-		.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
-		.filter((frontMatter) => frontMatter.published === true);
+export async function getStaticProps(): Promise<{
+  props: { posts: FrontMatter[] };
+}> {
+  const allPosts = getAllPosts();
+  const filteredPosts = allPosts
+    .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+    .filter((frontMatter) => frontMatter.published === true);
 
-	return {
-		props: {
-			posts: filteredPosts,
-		},
-	};
+  return {
+    props: {
+      posts: filteredPosts,
+    },
+  };
 }

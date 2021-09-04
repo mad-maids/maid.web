@@ -13,47 +13,47 @@ import MDXComponents from "../components/MDXComponents";
 import store from "../store";
 
 interface MyAppProps {
-	Component: any;
-	pageProps: any;
+  Component: any;
+  pageProps: any;
 }
 
 function handleExitComplete(): void {
-	if (typeof window !== "undefined") {
-		window.scrollTo({ top: 0 });
-	}
+  if (typeof window !== "undefined") {
+    window.scrollTo({ top: 0 });
+  }
 }
 
 const MyApp: FunctionComponent<MyAppProps> = ({ Component, pageProps }) => {
-	const router = useRouter();
-	const [mounted, setMounted] = useState(false);
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
 
-	useEffect(() => {
-		setMounted(true);
-	}, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-	const body = (
-		<StoreProvider store={store}>
-			<Layout>
-				<MDXProvider components={MDXComponents}>
-					<CacheProvider value={cache}>
-						<GlobalStyles />
-						<AnimatePresence
-							exitBeforeEnter
-							// initial={false}
-							onExitComplete={handleExitComplete}
-						>
-							<Component {...pageProps} key={router.route} />
-						</AnimatePresence>
-					</CacheProvider>
-				</MDXProvider>
-			</Layout>
-		</StoreProvider>
-	);
+  const body = (
+    <StoreProvider store={store}>
+      <Layout>
+        <MDXProvider components={MDXComponents}>
+          <CacheProvider value={cache}>
+            <GlobalStyles />
+            <AnimatePresence
+              exitBeforeEnter
+              // initial={false}
+              onExitComplete={handleExitComplete}
+            >
+              <Component {...pageProps} key={router.route} />
+            </AnimatePresence>
+          </CacheProvider>
+        </MDXProvider>
+      </Layout>
+    </StoreProvider>
+  );
 
-	if (!mounted) {
-		return <div style={{ visibility: "hidden" }}>{body}</div>;
-	}
-	return body;
+  if (!mounted) {
+    return <div style={{ visibility: "hidden" }}>{body}</div>;
+  }
+  return body;
 };
 
 export default MyApp;

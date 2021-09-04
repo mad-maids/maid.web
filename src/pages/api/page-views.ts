@@ -4,7 +4,9 @@ export default (req, res): Promise<any> => {
 	if (!req.query.id) {
 		return firebase.ref("views").once("value", (snapshot) => {
 			const views = snapshot.val();
-			const allViews = Object.values(views).reduce((total: any, value: any) => total + value);
+			const allViews = Object.values(views).reduce(
+				(total: any, value: any) => total + value
+			);
 
 			return res.status(200).json({
 				total: allViews,

@@ -10,9 +10,13 @@ const useElementPosition = (el) => {
 		const handlePositon = () => {
 			const element = el.current;
 			const x =
-				element.getBoundingClientRect().left + document.documentElement.scrollLeft + element.offsetWidth / 2;
+				element.getBoundingClientRect().left +
+				document.documentElement.scrollLeft +
+				element.offsetWidth / 2;
 			const y =
-				element.getBoundingClientRect().top + document.documentElement.scrollTop + element.offsetHeight / 2;
+				element.getBoundingClientRect().top +
+				document.documentElement.scrollTop +
+				element.offsetHeight / 2;
 
 			setElementPosition(getElement(x, y));
 		};

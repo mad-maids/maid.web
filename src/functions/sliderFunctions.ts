@@ -8,7 +8,13 @@ import {
 	infoFadeOut,
 } from "../animations/slider-anim";
 
-const nextSlide = (imageList, numList, imageWidth, setActive, infoList): void => {
+const nextSlide = (
+	imageList,
+	numList,
+	imageWidth,
+	setActive,
+	infoList
+): void => {
 	if (imageList.children[0].classList.contains("active")) {
 		setActive({ isActive1: false, isActive2: true });
 		slideLeft(imageList.children, imageWidth, 0, 1);
@@ -43,7 +49,13 @@ const nextSlide = (imageList, numList, imageWidth, setActive, infoList): void =>
 	}
 };
 
-const prevSlide = (imageList, numList, imageWidth, setActive, infoList): void => {
+const prevSlide = (
+	imageList,
+	numList,
+	imageWidth,
+	setActive,
+	infoList
+): void => {
 	if (imageList.children[0].classList.contains("active")) {
 		setActive({ isActive1: false, isActive3: true });
 		slideLeft(imageList.children, imageWidth, 2, 0, 3);

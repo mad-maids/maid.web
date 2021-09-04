@@ -5,12 +5,15 @@ import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "src", "pages", "blog");
 
-export const getPostSlugs = (): string[] => fs.readdirSync(postsDirectory).filter((slug) => !slug.startsWith("."));
+export const getPostSlugs = (): string[] =>
+	fs.readdirSync(postsDirectory).filter((slug) => !slug.startsWith("."));
 
 export const getPostBySlug = (slug, fields = []): any => {
 	const pathToPost = join(postsDirectory, slug);
 	const files = fs.readdirSync(pathToPost);
-	const indexFile = files.find((file) => file.substr(0, file.lastIndexOf(".")) === "index");
+	const indexFile = files.find(
+		(file) => file.substr(0, file.lastIndexOf(".")) === "index"
+	);
 
 	const fullPath = join(pathToPost, indexFile);
 	const fileContents = fs.readFileSync(fullPath, "utf8");

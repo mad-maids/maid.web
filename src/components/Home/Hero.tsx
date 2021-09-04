@@ -10,64 +10,70 @@ import { media } from "../../styles/styles-utils";
 import ScrollForMore from "./ScrollIndicator";
 
 const Hero: FunctionComponent = () => {
-	const [t1] = useState(gsap.timeline({ delay: 0.2 }));
-	const n = 15;
+  const [t1] = useState(gsap.timeline({ delay: 0.2 }));
+  const n = 15;
 
-	const image = `/assets/misc/hero.png`;
+  const image = `/assets/misc/hero.png`;
 
-	let imageStack = useRef(null);
-	// let headlineFirst = useRef(null);
-	// let headlineSecond = useRef(null);
-	// let headlineThird = useRef(null);
-	let container = useRef(null);
-	let heroImage = useRef(null);
+  let imageStack = useRef(null);
+  // let headlineFirst = useRef(null);
+  // let headlineSecond = useRef(null);
+  // let headlineThird = useRef(null);
+  let container = useRef(null);
+  let heroImage = useRef(null);
 
-	useEffect(() => {
-		gsap.set(container, { css: { visibility: "visible" } });
+  useEffect(() => {
+    gsap.set(container, { css: { visibility: "visible" } });
 
-		t1.from(imageStack, 1.2, { y: 1280, ease: Power3.easeOut }, "+=1").from(
-			heroImage,
-			1,
-			{
-				scale: 1.6,
-				ease: Power3.easeOut,
-			},
-			"-=1"
-		);
-		// .from(
-		// 	[headlineFirst, headlineSecond, headlineThird],
-		// 	0.6,
-		// 	{
-		// 		y: 280,
-		// 		autoAlpha: 0,
-		// 		ease: Power3.easeInOut,
-		// 		stagger: {
-		// 			amount: 0.25,
-		// 		},
-		// 	},
-		// 	"-=.8"
-		// );
-	}, [t1, imageStack, container]);
+    t1.from(imageStack, 1.2, { y: 1280, ease: Power3.easeOut }, "+=1").from(
+      heroImage,
+      1,
+      {
+        scale: 1.6,
+        ease: Power3.easeOut,
+      },
+      "-=1"
+    );
+    // .from(
+    // 	[headlineFirst, headlineSecond, headlineThird],
+    // 	0.6,
+    // 	{
+    // 		y: 280,
+    // 		autoAlpha: 0,
+    // 		ease: Power3.easeInOut,
+    // 		stagger: {
+    // 			amount: 0.25,
+    // 		},
+    // 	},
+    // 	"-=.8"
+    // );
+  }, [t1, imageStack, container]);
 
-	return (
-		<>
-			<Holder ref={(el: any): void => (container = el)}>
-				<HeroContainer>
-					<HeroImageWrapper>
-						<HeroImg ref={(el: any): void => (imageStack = el)}>
-							<HeroBox />
-							<div
-								ref={(el: any): void => (heroImage = el)}
-								style={{
-									gridArea: "overlap",
-								}}
-							>
-								<Image className="hero" src={image} unsized alt="hero" loading="eager" />
-							</div>
-						</HeroImg>
-					</HeroImageWrapper>
+  return (
+    <>
+      <Holder ref={(el: any): void => (container = el)}>
+        <HeroContainer>
+          <HeroImageWrapper>
+            <HeroImg ref={(el: any): void => (imageStack = el)}>
+              <HeroBox />
+              <div
+                ref={(el: any): void => (heroImage = el)}
+                style={{
+                  gridArea: "overlap",
+                }}
+              >
+                <Image
+                  className="hero"
+                  src={image}
+                  unsized
+                  alt="hero"
+                  loading="eager"
+                />
+              </div>
+            </HeroImg>
+          </HeroImageWrapper>
 
-					{/* <HeroHeading>
+          {/* <HeroHeading>
 						<div style={{ overflow: "hidden" }}>
 							<Box
 								d="flex"
@@ -102,11 +108,11 @@ const Hero: FunctionComponent = () => {
 							</Box>
 						</div>
 					</HeroHeading> */}
-				</HeroContainer>
-				<ScrollForMore />
-			</Holder>
-		</>
-	);
+        </HeroContainer>
+        <ScrollForMore />
+      </Holder>
+    </>
+  );
 };
 export default Hero;
 
@@ -128,20 +134,20 @@ const spanTextRight = keyframes`
 `;
 
 const Holder = styled.div`
-	margin-bottom: 360px;
-	visibility: hidden;
-	${media.thone`  margin-bottom: 120px;`}
+  margin-bottom: 360px;
+  visibility: hidden;
+  ${media.thone`  margin-bottom: 120px;`}
 `;
 
 const HeroImg = styled(motion.div)`
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-auto-rows: auto;
-	grid-template-areas: "overlap";
-	padding-top: 60px;
-	img {
-		width: 100%;
-	}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "overlap";
+  padding-top: 60px;
+  img {
+    width: 100%;
+  }
 `;
 
 const HeroHeading = styled.div`
@@ -149,7 +155,7 @@ const HeroHeading = styled.div`
   align-self: center;
   padding-top: 140px;
   ${media.tablet` padding-top: 140px;`}
- 	position: absolute;
+  position: absolute;
 
   h1 {
     font-size: 144px;
@@ -160,7 +166,7 @@ const HeroHeading = styled.div`
   }
 
   .heading-reel {
-		border-color: ${(props): string => props.theme.tietary};
+    border-color: ${(props): string => props.theme.tietary};
     h1 {
       animation: ${spanTextLeft} 2s linear infinite;
       -webkit-text-fill-color: transparent;
@@ -177,28 +183,28 @@ const HeroHeading = styled.div`
 `;
 
 const HeroBox = styled.div`
-	background: #f1f1f1;
-	width: 475px;
-	height: 700px;
-	grid-area: overlap;
-	overflow: hidden;
-	${media.thone`width: 380px;
+  background: #f1f1f1;
+  width: 475px;
+  height: 700px;
+  grid-area: overlap;
+  overflow: hidden;
+  ${media.thone`width: 380px;
   height: 569px;`}
 `;
 
 const HeroContainer = styled(motion.div)`
-	display: flex;
-	position: relative;
-	justify-content: center;
-	margin-bottom: 60px;
-	margin-top: 100px;
-	${media.thone` margin-bottom: 40px; margin-top: 60px;`}
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  ${media.thone` margin-bottom: 40px; margin-top: 60px;`}
 `;
 
 const HeroImageWrapper = styled.div`
-	overflow: hidden;
-	width: 475px;
-	position: relative;
-	z-index: 2;
-	${media.thone`width: 380px;`}
+  overflow: hidden;
+  width: 475px;
+  position: relative;
+  z-index: 2;
+  ${media.thone`width: 380px;`}
 `;

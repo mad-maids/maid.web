@@ -1,10 +1,13 @@
 const getSnippet = async (id): Promise<any> => {
-	const response = await fetch(`https://born-api.herokuapp.com/api/v1/snippets/${id}`, {
-		headers: {
-			"Content-Type": "application/json",
-		},
-		method: "GET",
-	});
+	const response = await fetch(
+		`https://born-api.herokuapp.com/api/v1/snippets/${id}`,
+		{
+			headers: {
+				"Content-Type": "application/json",
+			},
+			method: "GET",
+		}
+	);
 
 	const snippet = await response.json();
 

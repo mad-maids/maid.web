@@ -2,4 +2,4 @@
 import { Posts, Works } from "./contentModel";
 import { StoreModel } from "./storeModel";
 
-export type { Posts, Works, StoreModel};
+export type { Posts, Works, StoreModel };

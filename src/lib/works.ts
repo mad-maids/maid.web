@@ -5,12 +5,15 @@ import matter from "gray-matter";
 
 const worksDirectory = join(process.cwd(), "src", "pages", "works");
 
-export const getWorkSlugs = (): string[] => fs.readdirSync(worksDirectory).filter((slug) => !slug.startsWith("."));
+export const getWorkSlugs = (): string[] =>
+	fs.readdirSync(worksDirectory).filter((slug) => !slug.startsWith("."));
 
 export const getWorkBySlug = (slug, fields = []): any => {
 	const pathToWork = join(worksDirectory, slug);
 	const files = fs.readdirSync(pathToWork);
-	const indexFile = files.find((file) => file.substr(0, file.lastIndexOf(".")) === "index");
+	const indexFile = files.find(
+		(file) => file.substr(0, file.lastIndexOf(".")) === "index"
+	);
 
 	const fullPath = join(pathToWork, indexFile);
 	const fileContents = fs.readFileSync(fullPath, "utf8");

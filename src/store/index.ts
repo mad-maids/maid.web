@@ -6,7 +6,9 @@ import { data } from "./hardcodedStore";
 
 const currentTheme = (): string => {
 	if (typeof window !== "undefined") {
-		return window.localStorage.getItem("theme") == null ? "dark" : window.localStorage.getItem("theme");
+		return window.localStorage.getItem("theme") == null
+			? "dark"
+			: window.localStorage.getItem("theme");
 	}
 };
 

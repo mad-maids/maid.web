@@ -11,47 +11,60 @@ import WorkImage from "./Work/Image";
 import { ImportedCode, CodeSkeleton } from "./Code";
 
 type ImageGridProps = {
-	columns: string;
-	rows: string;
-	gap: string;
+  columns: string;
+  rows: string;
+  gap: string;
 };
 
 type ImageProps = {
-	path: string;
+  path: string;
 };
 
 const BlogImage: FunctionComponent<ImageProps> = ({ path }) => {
-	const image = `/assets/blog/${path}`;
-	return (
-		<ImageWrapper>
-			<Image src={image} unsized />
-		</ImageWrapper>
-	);
+  const image = `/assets/blog/${path}`;
+  return (
+    <ImageWrapper>
+      <Image src={image} unsized />
+    </ImageWrapper>
+  );
 };
 
 const ImageWrapper = styled.div`
-	img {
-		width: 100%;
-		border-radius: 4px;
-		margin: 0 auto;
-	}
+  img {
+    width: 100%;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
 `;
 
-const ImageGrid: FunctionComponent<ImageGridProps> = ({ children, columns, rows, gap }) => (
-	<ImageGridContainer columns={columns} rows={rows} gap={gap}>
-		{children}
-	</ImageGridContainer>
+const ImageGrid: FunctionComponent<ImageGridProps> = ({
+  children,
+  columns,
+  rows,
+  gap,
+}) => (
+  <ImageGridContainer columns={columns} rows={rows} gap={gap}>
+    {children}
+  </ImageGridContainer>
 );
 
 const Tweet = ({ id }): JSX.Element => (
-	<TwitterTweetEmbed tweetId={id} placeholder={<CodeSkeleton />} options={{ theme: "dark" }} />
+  <TwitterTweetEmbed
+    tweetId={id}
+    placeholder={<CodeSkeleton />}
+    options={{ theme: "dark" }}
+  />
 );
 
 const YouTubeVid = ({ id }): JSX.Element => <YouTube id={id} />;
 
-const ImageGridContainer = styled.div<{ rows: string; columns: string; gap: string }>`
-	display: grid;
-	grid-template-columns: ${({ columns }): string => columns};
+const ImageGridContainer = styled.div<{
+  rows: string;
+  columns: string;
+  gap: string;
+}>`
+  display: grid;
+  grid-template-columns: ${({ columns }): string => columns};
   grid-auto-rows: ${({ rows }): string => (rows ? rows : "auto")};
   grid-gap: ${({ gap }): string => gap};
   ${media.bigDesktop` grid-gap: 80px;`}
@@ -60,10 +73,10 @@ const ImageGridContainer = styled.div<{ rows: string; columns: string; gap: stri
 `;
 
 export const CustomComponets = {
-	ImageGrid,
-	WorkImage,
-	BlogImage,
-	ImportedCode,
-	Tweet,
-	YouTubeVid,
+  ImageGrid,
+  WorkImage,
+  BlogImage,
+  ImportedCode,
+  Tweet,
+  YouTubeVid,
 };

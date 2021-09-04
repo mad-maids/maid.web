@@ -7,7 +7,8 @@ export default function useGetWindow() {
 	});
 
 	useEffect(() => {
-		const handleResize = () => setDimensions({ width: windowGlobal.innerWidth });
+		const handleResize = () =>
+			setDimensions({ width: windowGlobal.innerWidth });
 		window.addEventListener("resize", handleResize);
 		return () => {
 			window.removeEventListener("resize", handleResize);

@@ -1,12 +1,24 @@
 import gsap, { Power3 } from "gsap";
 
-export const slideLeft = (node1, node2, index, duration, multipled = 1): void => {
+export const slideLeft = (
+	node1,
+	node2,
+	index,
+	duration,
+	multipled = 1
+): void => {
 	gsap.to(node1[index], duration, {
 		x: -node2 * multipled,
 		ease: Power3.easeOut,
 	});
 };
-export const slideRight = (node1, node2, index, duration, multipled = 1): void => {
+export const slideRight = (
+	node1,
+	node2,
+	index,
+	duration,
+	multipled = 1
+): void => {
 	gsap.to(node1[index], duration, {
 		x: node2 * multipled,
 		ease: Power3.easeOut,
