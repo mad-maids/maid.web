@@ -10,8 +10,8 @@
     "format": "yarn format:check --write",
     "format:check": "prettier --check \"**/*.md\" \"*.js\" \"*.json\" \"{@types,layouts,src,templates}/**/*.{js,ts,jsx,tsx}\" \"{@types,layouts,src,templates}/*.{js,ts,jsx,tsx}\"",
     "lint:fix": "eslint . --fix",
-		"lint": "eslint .",
-		"build:rss": "node ./lib/generate-rss.js"
+    "lint": "eslint .",
+    "build:rss": "node ./lib/generate-rss.js"
   },
   "dependencies": {
     "@emotion/css": "^11.0.0",

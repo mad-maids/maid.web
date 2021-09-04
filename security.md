@@ -8,6 +8,7 @@ engine. Nevertheless, you will have run into issues while executing our
 program.**
 
 ### Node.JS
+
 | Version | Supported          |
 | ------- | ------------------ |
 | 15.x.x  | :white_check_mark: |
@@ -16,10 +17,11 @@ program.**
 | =< 12.0 | :x:                |
 
 ### TypeScript
+
 | Version | Supported          |
 | ------- | ------------------ |
-| 4.0.0  | :white_check_mark: |
-| 3.9.4  | :warning:          |
+| 4.0.0   | :white_check_mark: |
+| 3.9.4   | :warning:          |
 
 ## Preliminaries
 

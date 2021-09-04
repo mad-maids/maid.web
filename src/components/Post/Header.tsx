@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import { media } from "../../styles/styles-utils";
 
-
 interface PostHeadProps {
   image: string;
   readtime: string;
