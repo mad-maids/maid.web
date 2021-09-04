@@ -1,0 +1,5 @@
+.next
+node_modules
+next-env.d.ts
+next.config.js
+src/lib/firebase.js
