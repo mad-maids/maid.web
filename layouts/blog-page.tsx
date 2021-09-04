@@ -29,7 +29,7 @@ const BlogTemplate: FunctionComponent<Props> = ({ children, frontMatter }) => {
 		author: "Mad Maids",
 		website: "maid.uz",
 		title,
-		image: "https://bornwhitfield.vercel.app/_next/static/images/avatar-9a8e42de56e5d069879d7e114723d308.jpg",
+		image: "https://genemator.uz/gifs/cm.gif",
 		handle: "@genemator",
 	});
 
