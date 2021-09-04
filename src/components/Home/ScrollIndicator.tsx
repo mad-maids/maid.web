@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { FunctionComponent } from "react";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import Arrow from "../icons/arrow";
+import { media } from "../../styles/styles-utils";
+import Arrow from "../../icons/arrow";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 const n = 4;

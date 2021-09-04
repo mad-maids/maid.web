@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
 interface FeaturedProps {
 	featuredPost: Record<string, any>;

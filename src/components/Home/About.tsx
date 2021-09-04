@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import Backdrop from "../shared/Backdrop";
+import { media } from "../../styles/styles-utils";
+import Backdrop from "../../shared/Backdrop";
 
 const AboutHeadingCopy = (): JSX.Element => {
 	const [ref, inView] = useInView({

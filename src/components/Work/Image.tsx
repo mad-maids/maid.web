@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
-import * as pallete from "../utils/variables";
+import * as pallete from "../../utils/variables";
 
-import Caption from "./WorkCaption";
+import Caption from "./Caption";
 
 interface WorkImageProps {
 	imgName: string;

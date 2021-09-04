@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 
-import WorkListing from "../../components/WorkListing";
+import WorkListing from "../../components/Work/Listing";
 import SEO from "../../components/SEO";
 import { getAllWorks } from "../../lib/works";
 import { Works } from "../../models";

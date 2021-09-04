@@ -1,9 +1,9 @@
 import { FunctionComponent } from "react";
 import styled from "@emotion/styled";
 
-import capitalize from "../utils/capitalize";
-import * as pallete from "../utils/variables";
-import { media } from "../styles/styles-utils";
+import capitalize from "../../utils/capitalize";
+import * as pallete from "../../utils/variables";
+import { media } from "../../styles/styles-utils";
 
 interface PostCategoryListProps {
 	categories: string[];

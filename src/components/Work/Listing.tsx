@@ -7,12 +7,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import { PaginationStyles, PagePaginationContainer } from "../styles";
-import siteConfig from "../../site.config";
-import { Works } from "../models";
+import { media } from "../../styles/styles-utils";
+import { PaginationStyles, PagePaginationContainer } from "../../styles";
+import siteConfig from "../../../site.config";
+import { Works } from "../../models";
 
-import Pagination from "./Pagination";
+import Pagination from "../Pagination";
 
 interface WorkListingProps {
 	data: Works[];

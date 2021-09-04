@@ -6,11 +6,11 @@ import { parseISO, format } from "date-fns";
 // import useSWR from "swr";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import * as pallete from "../utils/variables";
-import useGetWindow from "../hooks/getWindow";
-import { line, number, heading, description, link } from "../animations/blog-latest-anim";
-import fetcher from "../lib/fetcher";
+import { media } from "../../styles/styles-utils";
+import * as pallete from "../../utils/variables";
+import useGetWindow from "../../hooks/getWindow";
+import { line, number, heading, description, link } from "../../animations/blog-latest-anim";
+import fetcher from "../../lib/fetcher";
 
 interface LatestEntriesProps {
 	slug: string;

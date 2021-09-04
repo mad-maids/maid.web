@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import styled from "@emotion/styled";
 
-import * as pallete from "../utils/variables";
-import { useStoreState } from "../store/hooks";
+import * as pallete from "../../utils/variables";
+import { useStoreState } from "../../store/hooks";
 
 interface SocialProps {
 	onCursor: (cursorType: string | void) => void;

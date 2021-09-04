@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { FunctionComponent } from "react";
 
 import SEO from "../../components/SEO";
-import BlogArchiveList from "../../components/BlogArchiveList";
+import BlogArchiveList from "../../components/Blog/ArchiveList";
 import siteConfig from "../../../site.config";
 import { getAllPosts } from "../../lib/posts";
 import { Posts } from "../../models";

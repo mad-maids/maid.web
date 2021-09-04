@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
 
-import { useStoreState } from "../store/hooks";
+import { useStoreState } from "../../store/hooks";
 
-import Meta from "./SEOMeta";
-import Twitter from "./SEOTwitter";
-import Facebook from "./SEOFacebook";
+import Meta from "./Meta";
+import Twitter from "./Twitter";
+import Facebook from "./Facebook";
 
 interface SEOProps {
 	title: string;

@@ -3,7 +3,7 @@ import { format, parseISO } from "date-fns";
 import { motion } from "framer-motion";
 import { FunctionComponent } from "react";
 
-import PostHead from "../src/components/PostHeader";
+import PostHead from "../src/components/Post/Header";
 import SEO from "../src/components/SEO";
 // import PostFooter from "../src/components/PostFooter";
 import Back from "../src/components/Back";

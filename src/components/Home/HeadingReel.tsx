@@ -4,7 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 import { animated as a } from "react-spring";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
 interface TextReelProps {
 	text: string;

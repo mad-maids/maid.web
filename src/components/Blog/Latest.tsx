@@ -3,12 +3,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import { header } from "../animations/blog-latest-anim";
-import { Posts } from "../models";
-import useCursor from "../hooks/useCursor";
+import { media } from "../../styles/styles-utils";
+import { header } from "../../animations/blog-latest-anim";
+import { Posts } from "../../models";
+import useCursor from "../../hooks/useCursor";
 
-import LatestEntries from "./BlogEntry";
+import LatestEntries from "./Entry";
 
 interface LatestProps {
 	latestPosts: Posts[];

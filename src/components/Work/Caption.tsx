@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
 const Caption: FunctionComponent<{ text: string }> = ({ text }) => (
 	<CaptionText>

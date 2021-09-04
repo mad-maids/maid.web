@@ -5,9 +5,9 @@ import { keyframes } from "@emotion/react";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
-import ScrollForMore from "./HomepageScrollIndicator";
+import ScrollForMore from "./ScrollIndicator";
 
 const Hero: FunctionComponent = () => {
 	const [t1] = useState(gsap.timeline({ delay: 0.2 }));

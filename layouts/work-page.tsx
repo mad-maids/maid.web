@@ -3,7 +3,7 @@ import { format, parseISO } from "date-fns";
 import { motion } from "framer-motion";
 import { FunctionComponent } from "react";
 
-import WorkIntro from "../src/components/WorkIntro";
+import WorkIntro from "../src/components/Work/Intro";
 import SEO from "../src/components/SEO";
 import Footer from "../src/components/Footer";
 import Back from "../src/components/Back";

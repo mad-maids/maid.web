@@ -5,15 +5,15 @@ import { FunctionComponent, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
 
-import { PaginationStyles, PagePaginationContainer } from "../styles";
-import { media, truncate } from "../styles/styles-utils";
-import siteConfig from "../../site.config";
-import { Posts } from "../models";
-import { config } from "../../config";
-import * as pallete from "../utils/variables";
+import { PaginationStyles, PagePaginationContainer } from "../../styles";
+import { media, truncate } from "../../styles/styles-utils";
+import siteConfig from "../../../site.config";
+import { Posts } from "../../models";
+import { config } from "../../../config";
+import * as pallete from "../../utils/variables";
 
-import Pill from "./PostCategoryList";
-import Pagination from "./Pagination";
+import Pill from "../Post/CategoryList";
+import Pagination from "../Pagination";
 
 interface BlogArchiveListProps {
 	data: Posts[];

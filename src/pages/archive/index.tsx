@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 
-import BlogArchiveList from "../../components/BlogArchiveList";
+import BlogArchiveList from "../../components/Blog/ArchiveList";
 import SEO from "../../components/SEO";
 import { getAllPosts } from "../../lib/posts";
 import { Posts } from "../../models";

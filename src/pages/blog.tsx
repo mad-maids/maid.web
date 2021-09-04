@@ -3,10 +3,10 @@ import Link from "next/link";
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 
-import Latest from "../components/BlogLatest";
+import Latest from "../components/Blog/Latest";
 import SEO from "../components/SEO";
 import Footer from "../components/Footer";
-import Featured from "../components/BlogFeatured";
+import Featured from "../components/Blog/Featured";
 import CTA, { CTAButton } from "../shared/CTA";
 import { getAllPosts } from "../lib/posts";
 import { Posts } from "../models";

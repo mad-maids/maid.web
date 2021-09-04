@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { FunctionComponent } from "react";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
 const Bio: FunctionComponent = () => {
 	const image = "/assets/misc/bio-edit.jpg";

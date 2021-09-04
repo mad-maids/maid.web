@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import { media } from "../styles/styles-utils";
 
-import WorkImage from "./WorkImage";
+import WorkImage from "./Work/Image";
 import { ImportedCode, CodeSkeleton } from "./Code";
 
 type ImageGridProps = {

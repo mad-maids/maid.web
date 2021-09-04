@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { FunctionComponent } from "react";
 import Image from "next/image";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
-import ViewCounter from "./ViewCounter";
+import ViewCounter from "../ViewCounter";
 
 interface PostHeadProps {
 	image: string;

@@ -1,161 +1,3 @@
-// import Router from "next/router";
-// import { useEffect, useState, FunctionComponent } from "react";
-// import Link from "next/link";
-// import { motion } from "framer-motion";
-// import useDimensions from "react-cool-dimensions";
-
-// import styled from "@emotion/styled";
-// import Icon from "../icons/logo";
-// import useIsMounted from "../hooks/useIsMounted";
-
-// interface NavigationProps {
-// 	onCursor: (cursorType: string | void) => void;
-// 	isOpen?: boolean;
-// 	dispatch?: any;
-// }
-
-// const NavMenu: FunctionComponent<NavigationProps> = ({ onCursor }) => {
-// 	const links = [
-// 		{ key: "", href: "/work", label: "Work" },
-// 		{ key: "", href: "/blog", label: "Blog" },
-// 		{ key: "", href: "/collective", label: "Collective" },
-// 	];
-
-// 	const [hasActive, setHasActive] = useState(false);
-
-// 	return (
-// 		<ul style={{ marginLeft: "auto", display: "flex" }}>
-// 			{links.map(({ label, href }, idx) => (
-// 				<motion.li
-// 					key={idx}
-// 					onMouseEnter={(): void => onCursor("pointer")}
-// 					onMouseLeave={(): void => onCursor()}
-// 				>
-// 					<Link href={href} scroll={false}>
-// 						<a>
-// 							<p>{label}</p>
-// 						</a>
-// 					</Link>
-// 				</motion.li>
-// 			))}
-// 		</ul>
-// 	);
-// };
-
-// const Navigation: FunctionComponent<NavigationProps> = ({ onCursor, isOpen, dispatch }) => {
-// 	const [disabled, setDisabled] = useState(false);
-// 	const isMounted = useIsMounted();
-
-// 	const handleRouteChange = (): void => {
-// 		if (isMounted.current) {
-// 			onCursor();
-// 			// dispatch({ type: "MENU_CLOSE" });
-// 		}
-// 	};
-
-// 	// const handleMenu = (): void => {
-// 	// 	disabledMenu();
-// 	// 	dispatch({ type: "MENU_TOGGLE" });
-// 	// 	onCursor();
-// 	// };
-
-// 	// const disabledMenu = (): void => {
-// 	// 	setDisabled(!disabled);
-// 	// 	setTimeout(() => {
-// 	// 		setDisabled(false);
-// 	// 	}, 800);
-// 	// };
-
-// 	useEffect(() => {
-// 		Router.events.on("routeChangeComplete", handleRouteChange);
-
-// 		// isOpen ? (document.body.style.position = "fixed") : (document.body.style.position = null);
-// 	});
-
-// 	// const handleFade = isOpen
-// 	// 	? {
-// 	// 			opacity: 1,
-// 	// 			display: "block",
-// 	// 			transition: {
-// 	// 				delay: 1,
-// 	// 				duration: 1,
-// 	// 				ease: [0.6, 0.05, -0.01, 0.9],
-// 	// 			},
-// 	// 	  }
-// 	// 	: {
-// 	// 			opacity: 0,
-// 	// 			transitionEnd: {
-// 	// 				display: "none",
-// 	// 			},
-// 	// 			transition: {
-// 	// 				duration: 1,
-// 	// 				ease: [0.6, 0.05, -0.01, 0.9],
-// 	// 			},
-// 	// 	  };
-
-// 	// const { ref, currentBreakpoint, width, height } = useDimensions<HTMLDivElement>({
-// 	// 	breakpoints: { XS: 0, SM: 100, MD: 200, LG: 300, XL: 400 },
-// 	// });
-
-// 	return (
-// 		<>
-// 			<NavigationContainer>
-// 				<MenuContainer>
-// 					<Link href="/" passHref scroll={false}>
-// 						<a aria-label="Home">
-// 							<MenuLogo
-// 								onMouseEnter={(): void => onCursor("pointer")}
-// 								onMouseLeave={(): void => onCursor()}
-// 							>
-// 								<Icon />
-// 							</MenuLogo>
-// 						</a>
-// 					</Link>
-
-// 					<NavMenu onCursor={onCursor} />
-// 				</MenuContainer>
-// 			</NavigationContainer>
-// 		</>
-// 	);
-// };
-
-// export default Navigation;
-
-// const NavigationContainer = styled.nav`
-// 	padding: 0 14%;
-// 	display: flex;
-// 	border-right: none;
-// 	width: 100%;
-// 	height: 80px;
-// 	align-items: center;
-// `;
-
-// const MenuContainer = styled(motion.div)`
-// 	display: flex;
-// 	align-items: center;
-// 	width: 100%;
-
-// 	li {
-// 		padding-left: 60px;
-// 		p {
-// 			color: ${(props): string => props.theme.tietary};
-// 			font-size: 16px;
-// 		}
-// 	}
-// `;
-
-// const MenuLogo = styled(motion.div)`
-// 	svg {
-// 		fill: ${(props): string => props.theme.tietary};
-// 		transition: all 0.4s ease;
-// 	}
-// 	transition: all 0.4s ease;
-// 	&:hover {
-// 		transform: scale(0.9);
-// 		transition: all 0.4s ease;
-// 	}
-// `;
-
 import Router from "next/router";
 import { useEffect, useState, FunctionComponent, useRef } from "react";
 import Link from "next/link";
@@ -168,7 +10,7 @@ import * as pallete from "../utils/variables";
 import { fadeInUp, fadeOutDown } from "../animations";
 import { useStoreActions } from "../store/hooks";
 
-import Social from "./FooterLinks";
+import Social from "./Footer/Links";
 import ColorSwitch from "./ColorSwitch";
 
 interface NavigationProps {
@@ -181,7 +23,7 @@ const NavMenu: FunctionComponent<NavigationProps> = ({ onCursor, isOpen }) => {
 	const links = [
 		{ key: "", href: "/work", label: "Work" },
 		{ key: "", href: "/blog", label: "Blog" },
-		{ key: "", href: "/collective", label: "Collective" },
+		{ key: "", href: "/archive", label: "Archive" },
 	];
 
 	const [hasActive, setHasActive] = useState(false);

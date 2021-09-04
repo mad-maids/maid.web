@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 
-import WorkListing from "../../components/WorkListing";
+import WorkListing from "../../components/Work/Listing";
 import siteConfig from "../../../site.config";
 import { getAllWorks } from "../../lib/works";
 import { Works } from "../../models";

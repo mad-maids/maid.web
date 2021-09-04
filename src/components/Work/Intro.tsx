@@ -4,7 +4,7 @@ import useDimensions from "react-cool-dimensions";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
+import { media } from "../../styles/styles-utils";
 
 interface IntroProps {
 	image: string;

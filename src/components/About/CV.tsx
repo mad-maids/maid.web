@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import { useStoreState } from "../store/hooks";
+import { media } from "../../styles/styles-utils";
+import { useStoreState } from "../../store/hooks";
 
 const CV: FunctionComponent = () => {
 	const cvData = useStoreState((state) => state.cvData);

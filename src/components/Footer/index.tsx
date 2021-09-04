@@ -3,10 +3,10 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import useCursor from "../hooks/useCursor";
+import { media } from "../../styles/styles-utils";
+import useCursor from "../../hooks/useCursor";
 
-import Social from "./FooterLinks";
+import Social from "./Links";
 
 const Footer: FunctionComponent = () => {
 	const { onCursor } = useCursor();

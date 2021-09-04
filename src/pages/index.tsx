@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
 
-import HomepageHero from "../components/HomepageHero";
+import HomepageHero from "../components/Home/Hero";
 import SEO from "../components/SEO";
 import MainFooter from "../components/Footer";
-import TextReel from "../components/HomepageHeadingReel";
-import HomepageSlider from "../components/HomepageSlider";
-import HomepageAbout from "../components/HomepageAbout";
+import TextReel from "../components/Home/HeadingReel";
+import HomepageSlider from "../components/Home/Slider";
+import HomepageAbout from "../components/Home/About";
 import CTA, { CTAButton } from "../shared/CTA";
 import { getAllWorks } from "../lib/works";
 import { Works } from "../models";

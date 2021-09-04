@@ -6,8 +6,8 @@ import useDimensions from "react-cool-dimensions";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-import { media } from "../styles/styles-utils";
-import { prevSlide, nextSlide } from "../functions/sliderFunctions";
+import { media } from "../../styles/styles-utils";
+import { prevSlide, nextSlide } from "../../functions/sliderFunctions";
 
 const sliderNum = [{ num: 1 }, { num: 2 }, { num: 3 }];
 
