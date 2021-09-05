@@ -5,7 +5,7 @@
 **This website was built with [next.js](https://github.com/vercel/next.js) and [three.js](https://threejs.org/) in
 [Node.js](https://nodejs.org/en/). This website was constructed as a component modular, so don't
 worry about adding your own customizations. It will not affect to the website's
-working process. Just, don't forget to add your command to pages and
+working process. Just, don't forget to add your component to pages, and
 you're ready to go!**
 
 ## Documentations
