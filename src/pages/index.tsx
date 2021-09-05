@@ -29,7 +29,7 @@ const Home: FunctionComponent<HomeProps> = ({ allWorks }) => {
 
   const { onCursor } = useCursor();
 
-  const link = `mailto:ferollo.geno@icloud.com`;
+  const link = `https://t.me/madmaids`;
   const copyText = `If you like what we are putting out we encourage you to view more,
   but if you have something in mind. Dont be shy, say hello.`;
 
