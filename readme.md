@@ -16,7 +16,7 @@ you're ready to go!**
 
 ## Contributors
 
-This bot exists thankfully for those who contributed this project and they are:
+This website exists thankfully for those who contributed this project, and they are:
 
 - [Genemator](https://github.com/genemators) _(Creator)_ - The actual creator
   of the project and active contributor
