@@ -1,7 +1,11 @@
 {
   "name": "maids.web",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+	"description": "Website that serves as a showoff for Mad Maid",
+	"repository": "https://github.com/mad-maids/maid.web.git",
+	"author": "Mad Maids (https://maid.uz)",
+	"license": "CC0-1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
