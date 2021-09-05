@@ -21,8 +21,6 @@ This website exists thankfully for those who contributed this project, and they 
 - [Genemator](https://github.com/genemators) _(Creator)_ - The actual creator
   of the project and active contributor
 
-> Start contributing to become relative to maid!
-
 ---
 
 > The website is still in beta phase so feel free to
