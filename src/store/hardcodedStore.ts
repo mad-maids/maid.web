@@ -8,7 +8,7 @@ const data = {
 			},
 			{
 				key: "02",
-				year: "JAN 2020 — PRESENT",
+				year: "SEP 2021 — PRESENT",
 				position: "Organization Dev Support Team.",
 			},
 		],
