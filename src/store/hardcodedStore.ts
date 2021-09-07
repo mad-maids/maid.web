@@ -67,7 +67,7 @@ const data = {
 			className: "Github",
 		},
 		{
-			href: "https://t.me/mad_maids",
+			href: "https://t.me/madmaids",
 			name: "Telegram",
 			className: "Telegram",
 		},
