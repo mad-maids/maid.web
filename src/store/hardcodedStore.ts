@@ -36,16 +36,16 @@ const data = {
 		socialMedia: {
 			twitter: {
 				twitterCard: `summary`,
-				twitterTitle: `genemator`,
-				twitterDescription: `👰🏻 Maids on the web.`,
+				twitterTitle: `👰🏻 Mad Maids on the web.`,
+				twitterDescription: ``,
 				twitterImage: null,
 				twitterSite: `@genemator`,
 				twitterHandle: `@genemator`,
 			},
 			facebook: {
 				facebookUrl: `https://maid.uz`,
-				facebookTitle: `Mad Maids`,
-				facebookDescription: `👰🏻 Maids on the web.`,
+				facebookTitle: `👰🏻 Mad Maids on the web.`,
+				facebookDescription: `A website where a group of senior developers try to complicate everything!`,
 				facebookImage: null,
 				facebookType: `website`,
 			},
