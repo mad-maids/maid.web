@@ -23,12 +23,12 @@ const useCVData = (): CVDataProps => {
     },
     experties: {
       id: 1,
-      title: "What We Do",
+      title: "We Do",
       data: experties,
     },
     tools: {
       id: 2,
-      title: "Tools We Use",
+      title: "Tools",
       data: tools,
     },
   };

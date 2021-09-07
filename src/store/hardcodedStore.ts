@@ -14,10 +14,9 @@ const data = {
 		],
 		experties: [
 			{ name: "Frontend Development" },
-			{ name: "Logos" },
 			{ name: "Illustration" },
 			{ name: "Web Design" },
-			{ name: "Photography" },
+			{ name: "System Programming" },
 			{ name: "Backend Development" },
 			{ name: "Software Development" },
 		],
@@ -68,7 +67,7 @@ const data = {
 			className: "Github",
 		},
 		{
-			href: "https://t.me/madmaids",
+			href: "https://t.me/mad_maids",
 			name: "Telegram",
 			className: "Telegram",
 		},
