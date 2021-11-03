@@ -28,6 +28,15 @@ module.exports = withPlugins([
   withFonts,
   withMdxEnhanced(mdxConfig),
   {
+		async redirects() {
+			return [
+				{
+					source: "/discord",
+					destination: "/api/discord",
+					permanent: true,
+				},
+			];
+		},
     env: {
       apiKey: process.env.API_KEY,
       authDomain: process.env.AUTH_DOMAIN,
