@@ -31,7 +31,7 @@ const BlogTemplate: FunctionComponent<Props> = ({ children, frontMatter }) => {
       author: "Mad Maids",
       website: "maid.uz",
       title,
-      image: "https://genemator.uz/gifs/cm.gif",
+      image: "https://maid.uz/gifs/cm.gif",
       handle: "@uwussimo",
     }
   );

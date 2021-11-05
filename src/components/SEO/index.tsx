@@ -49,7 +49,7 @@ const SEO: FunctionComponent<SEOProps> = ({ title, description, keywords }) => {
         twitterImage={
           twitterImage
             ? twitterImage
-            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@genemator&image=https://genemator.uz/gifs/cm.gif`
+            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@uwussimo&image=https://maid.uz/gifs/cm.gif`
         }
         twitterSite={twitterSite}
         twitterHandle={twitterHandle}
@@ -62,7 +62,7 @@ const SEO: FunctionComponent<SEOProps> = ({ title, description, keywords }) => {
         facebookImage={
           facebookImage
             ? facebookImage
-            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@genemator&image=https://genemator.uz/gifs/cm.gif`
+            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@uwussimo&image=https://maid.uz/gifs/cm.gif`
         }
       />
     </>
