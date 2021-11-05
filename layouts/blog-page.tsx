@@ -32,7 +32,7 @@ const BlogTemplate: FunctionComponent<Props> = ({ children, frontMatter }) => {
       website: "maid.uz",
       title,
       image: "https://genemator.uz/gifs/cm.gif",
-      handle: "@genemator",
+      handle: "@uwussimo",
     }
   );
 

@@ -38,8 +38,8 @@ const data = {
 				twitterTitle: `👰🏻 Mad Maids on the web.`,
 				twitterDescription: ``,
 				twitterImage: null,
-				twitterSite: `@genemator`,
-				twitterHandle: `@genemator`,
+				twitterSite: `@uwussimo`,
+				twitterHandle: `@uwussimo`,
 			},
 			facebook: {
 				facebookUrl: `https://maid.uz`,
@@ -52,12 +52,12 @@ const data = {
 	},
 	plugs: [
 		{
-			href: "https://www.instagram.com/genemator",
+			href: "https://www.instagram.com/madmaids_",
 			name: "Instagram",
 			className: "Instagram",
 		},
 		{
-			href: "https://twitter.com/genemator",
+			href: "https://twitter.com/uwussimo",
 			name: "Twitter",
 			className: "Twitter",
 		},
