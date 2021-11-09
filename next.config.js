@@ -35,6 +35,11 @@ module.exports = withPlugins([
 					destination: "/api/discord",
 					permanent: true,
 				},
+				{
+					source: "/slave",
+					destination: "/api/slave",
+					permanent: true,
+				},
 			];
 		},
     env: {
