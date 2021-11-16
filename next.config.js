@@ -40,6 +40,11 @@ module.exports = withPlugins([
 					destination: "/api/slave",
 					permanent: true,
 				},
+				{
+					source: "/furret",
+					destination: "/api/furret",
+					permanent: true,
+				},
 			];
 		},
     env: {
