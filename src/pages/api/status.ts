@@ -4,6 +4,6 @@ export default async (
 	req: NextApiRequest,
 	res: NextApiResponse
 ): Promise<any> => {
-	const link: string = "https://www.youtube.com/watch?v=ih9zBLDr_ro";
+	const link: string = "https://slaves.instatus.com/";
 	return res.redirect(link);
 };

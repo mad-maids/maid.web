@@ -41,6 +41,11 @@ module.exports = withPlugins([
 					permanent: true,
 				},
 				{
+					source: "/status",
+					destination: "/api/status",
+					permanent: true,
+				},
+				{
 					source: "/furret",
 					destination: "/api/furret",
 					permanent: true,
