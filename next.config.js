@@ -46,6 +46,11 @@ module.exports = withPlugins([
 					permanent: true,
 				},
 				{
+					source: "/hentai",
+					destination: "/api/hentai",
+					permanent: true,
+				},
+				{
 					source: "/furret",
 					destination: "/api/furret",
 					permanent: true,
