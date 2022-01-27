@@ -24,6 +24,7 @@ const NavMenu: FunctionComponent<NavigationProps> = ({ onCursor, isOpen }) => {
     // { key: "", href: "/work", label: "Work" },
     { key: "", href: "/blog", label: "Blog" },
     { key: "", href: "/archive", label: "Archive" },
+    { key: "", href: "/status", label: "Status" },
   ];
 
   const [hasActive, setHasActive] = useState(false);
