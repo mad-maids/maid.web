@@ -76,7 +76,7 @@ const AboutBodyCopy = (): JSX.Element => {
       </Text>
       <div className="body">
         <Text className="line">
-          <p>An IT Club based on +70 WIUT</p>
+          <p>An IT Club based on 70+ Family</p>
         </Text>
         <Text className="line">
           <p>which manages the BIS direction</p>
