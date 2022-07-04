@@ -76,16 +76,16 @@ const AboutBodyCopy = (): JSX.Element => {
       </Text>
       <div className="body">
         <Text className="line">
-          <p>An IT Club based on enthusiasts</p>
+          <p>An IT Org. based on enthusiasts</p>
         </Text>
         <Text className="line">
-          <p>which manages the BIS direction</p>
+          <p>which manages the Uzbek FLOSS</p>
         </Text>
         <Text className="line">
-          <p>& tries to solve student problems</p>
+          <p>& tries to solve problems via</p>
         </Text>
         <Text className="line">
-          <p>via modern technology & platforms</p>
+          <p>modern technology & platforms</p>
         </Text>
         <br />
         <br />
