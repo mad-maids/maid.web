@@ -8,8 +8,13 @@ const data = {
 			},
 			{
 				key: "02",
-				year: "SEP 2021 — PRESENT",
+				year: "SEP 2021 — OCT 2021",
 				position: "Organization Dev Support Team.",
+			},
+			{
+				key: "03",
+				year: "FEB 2022 — PRESENT",
+				position: "Organization for improving Uzbek FLOSS.",
 			},
 		],
 		experties: [
@@ -19,6 +24,8 @@ const data = {
 			{ name: "System Programming" },
 			{ name: "Backend Development" },
 			{ name: "Software Development" },
+			{ name: "DevOps" },
+			{ name: "System Development" },
 		],
 		tools: [
 			{ name: "Photoshop" },
@@ -26,6 +33,7 @@ const data = {
 			{ name: "JetBrains" },
 			{ name: "*NIX & Windows" },
 			{ name: "VSCode" },
+			{ name: "Arch BTW!" },
 		],
 	},
 	siteMeta: {
@@ -51,11 +59,6 @@ const data = {
 		},
 	},
 	plugs: [
-		{
-			href: "https://www.instagram.com/madmaids_",
-			name: "Instagram",
-			className: "Instagram",
-		},
 		{
 			href: "https://twitter.com/uwussimo",
 			name: "Twitter",

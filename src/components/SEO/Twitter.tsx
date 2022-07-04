@@ -24,6 +24,7 @@ const Twitter: FunctionComponent<TwitterProps> = ({
     <meta name="twitter:title" content={twitterTitle} />
     <meta name="twitter:description" content={twitterDescription} />
     <meta name="twitter:image" content={twitterImage} />
+    <meta name="twitter:card" content="summary_large_image" />
   </Head>
 );
 

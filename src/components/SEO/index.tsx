@@ -46,11 +46,7 @@ const SEO: FunctionComponent<SEOProps> = ({ title, description, keywords }) => {
         twitterCard={twitterCard}
         twitterTitle={twitterTitle}
         twitterDescription={twitterDescription}
-        twitterImage={
-          twitterImage
-            ? twitterImage
-            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@uwussimo&image=https://maid.uz/gifs/cm.gif`
-        }
+        twitterImage={twitterImage ? twitterImage : `https://maid.uz/og.jpeg`}
         twitterSite={twitterSite}
         twitterHandle={twitterHandle}
       />
@@ -60,9 +56,7 @@ const SEO: FunctionComponent<SEOProps> = ({ title, description, keywords }) => {
         facebookTitle={facebookTitle}
         facebookDescription={facebookDescription}
         facebookImage={
-          facebookImage
-            ? facebookImage
-            : `https://og-serverless-git-master-darkristy.vercel.app/og.jpg?title=Welcome%20to%20the%20Mad%20Maids!&author=Mad%20Maids&website=maid.uz&handle=@uwussimo&image=https://maid.uz/gifs/cm.gif`
+          facebookImage ? facebookImage : `https://maid.uz/og.jpeg`
         }
       />
     </>
