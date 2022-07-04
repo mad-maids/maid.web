@@ -10,7 +10,7 @@ program.**
 ### Node.JS
 
 | Version | Supported          |
-| ------- | ------------------ |
+|---------|--------------------|
 | 15.x.x  | :white_check_mark: |
 | 14.x.x  | :warning:          |
 | 13.x.x  | :x:                |
@@ -19,7 +19,7 @@ program.**
 ### TypeScript
 
 | Version | Supported          |
-| ------- | ------------------ |
+|---------|--------------------|
 | 4.0.0   | :white_check_mark: |
 | 3.9.4   | :warning:          |
 
