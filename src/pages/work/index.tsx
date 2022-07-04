@@ -16,7 +16,7 @@ const Index: FunctionComponent<WorkPageProps> = ({ works }) => {
 
   return (
     <motion.div exit={{ opacity: 0 }}>
-      <SEO title="Work" description="This is where my current work lives." />
+      <SEO title="Work" description="This is where our current work lives." />
       <WorkListing data={works} onCursor={onCursor} />;
     </motion.div>
   );
